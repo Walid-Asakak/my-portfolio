@@ -1,4 +1,5 @@
 const Admin = require('./src/models/admin.model');
+const Profile = require('./src/models/profile.model');
 const { sequelize } = require('./src/config/sequelize');
 
 async function startServer(){
