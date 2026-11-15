@@ -14,7 +14,6 @@ Profile.init(
         firstname: {
             type: DataTypes.STRING(50),
             allowNull: false,
-            unique: true,
         },
         lastname: {
             type: DataTypes.STRING(50),
