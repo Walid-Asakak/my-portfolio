@@ -1,14 +1,16 @@
-const { sequelize } = require('./src/config/Sequelize');
-
-require('dotenv');
+const Admin = require('./src/models/admin.model');
+const { sequelize } = require('./src/config/sequelize');
 
 async function startServer(){
-    // Try database connection :
     try {
+        // Try database connection :
         await sequelize.authenticate();
         console.log('Database connection successful');
-    }
 
+        // Synchronize Sequelize models with MySQL
+        await sequelize.sync();
+        console.log('Database synchronization successful');
+    }
     catch(error){
         console.error('Unable to connect to the database:', error);
     }
