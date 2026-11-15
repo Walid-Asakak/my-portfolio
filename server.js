@@ -2,6 +2,7 @@ const Admin = require('./src/models/admin.model');
 const Profile = require('./src/models/profile.model');
 const Mssage = require('./src/models/message.model');
 const Category = require('./src/models/category.model');
+const Skill = require('./src/models/skill.model');
 const { sequelize } = require('./src/config/sequelize');
 
 async function startServer(){
