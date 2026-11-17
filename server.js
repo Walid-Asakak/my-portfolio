@@ -4,6 +4,7 @@ const Mssage = require('./src/models/message.model');
 const Category = require('./src/models/category.model');
 const Skill = require('./src/models/skill.model');
 const Experience = require('./src/models/experience.model');
+const Project = require('./src/models/project.model');
 const { sequelize } = require('./src/config/sequelize');
 
 async function startServer(){
