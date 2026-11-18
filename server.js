@@ -1,10 +1,11 @@
 const Admin = require('./src/models/admin.model');
 const Profile = require('./src/models/profile.model');
-const Mssage = require('./src/models/message.model');
+const Message = require('./src/models/message.model');
 const Category = require('./src/models/category.model');
 const Skill = require('./src/models/skill.model');
 const Experience = require('./src/models/experience.model');
 const Project = require('./src/models/project.model');
+const Image = require('./src/models/image.model');
 const { sequelize } = require('./src/config/sequelize');
 
 async function startServer(){
