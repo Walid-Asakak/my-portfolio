@@ -1,14 +1,5 @@
-const Admin = require('./src/models/admin.model');
-const Profile = require('./src/models/profile.model');
-const Message = require('./src/models/message.model');
-const Category = require('./src/models/category.model');
-const Skill = require('./src/models/skill.model');
-const Experience = require('./src/models/experience.model');
-const Project = require('./src/models/project.model');
-const Image = require('./src/models/image.model');
-const ProjectSkill = require('./src/models/projectSkill.model');
-const ExperienceSkill = require('./src/models/experienceSkill.model');
 const { sequelize } = require('./src/config/sequelize');
+require('./src/models/createAssociations');
 
 async function startServer(){
     try {
